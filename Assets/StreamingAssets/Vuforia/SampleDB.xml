@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+    <Tracking>
+        <ImageTarget name="life" size="0.232500 0.182049"/>
+        <ImageTarget name="wild" size="0.267100 0.182066"/>
+        <ImageTarget name="WILDLIFE_logo_white_black" size="0.200000 0.078300"/>
+        <ImageTarget name="TableCenter.Bottom" size="0.101600 0.101600"/>
+        <ImageTarget name="TableCenter.Left" size="0.101600 0.101600"/>
+        <ImageTarget name="TableCenter.Right" size="0.101600 0.101600"/>
+        <ImageTarget name="TableCenter.Back" size="0.101600 0.101600"/>
+        <ImageTarget name="TableCenter.Front" size="0.101600 0.101600"/>
+        <ImageTarget name="TableCenter.Top" size="0.101600 0.101600"/>
+        <MultiTarget name="TableCenter">
+            <Part name="TableCenter.Left" translation="-0.05079999938607216 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="TableCenter.Right" translation="0.05079999938607216 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="TableCenter.Front" translation="0 0 0.05079999938607216" rotation="AD: 1 0 0 0"/>
+            <Part name="TableCenter.Back" translation="0 0 -0.05079999938607216" rotation="AD: 0 1 0 180"/>
+            <Part name="TableCenter.Top" translation="0 0.05079999938607216 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="TableCenter.Bottom" translation="0 -0.05079999938607216 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
+    </Tracking>
+</QCARConfig>

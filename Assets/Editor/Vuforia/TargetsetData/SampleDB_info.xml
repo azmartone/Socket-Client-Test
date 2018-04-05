@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="QCAR_Dataset_config.xsd">
+  <TargetSet version="5.0" toolVersion="4.2.0">
+    <ObjectTarget bbox="0.0 0.0 0.0 0.1 0.1 0.1" captureAppVersion="6.5.0" lastSaved="2018-03-21 14:04:01" name="logitech_k200_keyboard" targetId="1cfaab5a26d34b90a9b823ff2bfa5219" version="2.0" />
+    <ObjectTarget bbox="0.0 0.0 0.0 0.1 0.1 0.1" captureAppVersion="6.5.0" lastSaved="2018-03-21 13:47:58" name="scotch_tape" targetId="f368d1efd4d3409fb2df4292fdbdbb63" version="2.0" />
+  </TargetSet>
+</QCARInfo>
