@@ -7,4 +7,13 @@ using UnityEngine;
 public class Game{
     public Team redTeam;
     public Team blueTeam;
+
+    public Team GetTeamByName(string name)
+    {
+        switch(name) {
+            case "redTeam": return redTeam;
+            case "blueTeam": return blueTeam;
+            default: return null;
+        }
+    }
 }

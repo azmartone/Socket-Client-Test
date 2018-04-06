@@ -25,7 +25,6 @@ public class Team {
 		}
 		set{
             score = value;
-            Debug.Log("I just set _score to" + value);
 		}
 	}
 

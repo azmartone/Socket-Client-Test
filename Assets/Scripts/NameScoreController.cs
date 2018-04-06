@@ -6,8 +6,11 @@ public class NameScoreController : MonoBehaviour {
 
     public GameObject nameObject;
     public GameObject scoreObject;
+    public enum TeamColor { redTeam, blueTeam }
+    public TeamColor teamColor;
 	// Use this for initialization
 	void Start () {
+        SetScore();
         DataController.Instance.onDataUpdate += SetScore;
 	}
 	
@@ -20,8 +23,16 @@ public class NameScoreController : MonoBehaviour {
         TextMesh nameTextMesh = nameObject.GetComponent<TextMesh>();
         TextMesh scoreTextMesh = scoreObject.GetComponent<TextMesh>();
 
-        nameTextMesh.text = DataController.Instance.Data.game.redTeam.teamName;
-        scoreTextMesh.text = DataController.Instance.Data.game.redTeam.Score.ToString();
+        if (DataController.Instance.Data != null){
+            
+            Team team = DataController.Instance.Data.game.GetTeamByName(teamColor.ToString());
+            nameTextMesh.text = team.teamName;
+            scoreTextMesh.text = team.Score.ToString();
+        } else {
+            nameTextMesh.text = "Waiting for Score";
+            scoreTextMesh.text = "---";
+        }
+        Debug.Log(nameTextMesh.text + " " + scoreTextMesh.text);
     }
 
 	private void OnDisable()

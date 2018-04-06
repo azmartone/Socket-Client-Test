@@ -19,9 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4994834049745294}
-  - component: {fileID: 114686723919695894}
+  - component: {fileID: 114973331008217508}
   m_Layer: 0
-  m_Name: NameScore (1)
+  m_Name: NameScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -214,7 +214,7 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
---- !u!114 &114686723919695894
+--- !u!114 &114973331008217508
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -222,8 +222,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1492603532063192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 579d6dfa3df9e490f89376420841741c, type: 3}
+  m_Script: {fileID: 11500000, guid: a2a1e4611ae574428abdae903f526b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nameObject: {fileID: 1822253132292534}
   scoreObject: {fileID: 1608834279982218}
+  teamColor: 0

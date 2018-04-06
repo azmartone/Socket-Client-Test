@@ -41,7 +41,7 @@ public class SocketClient : MonoBehaviour {
 
 		manager = new SocketManager(new Uri(Constants.SOCKET_URI), options);
 		Debug.Log (Constants.SOCKET_URI);
-		namespaceSocket = manager.GetSocket();
+        namespaceSocket = manager.GetSocket("/pong");
 		manager.Encoder = new BestHTTP.SocketIO.JsonEncoders.LitJsonEncoder();
 
 		namespaceSocket.On(Constants.UPDATE, OnUpdate, true);
@@ -56,7 +56,8 @@ public class SocketClient : MonoBehaviour {
 
 	private void OnUpdate(Socket socket, Packet packet, params object[] args)
 	{
-		ParseUpdateData(packet.RemoveEventName(true));
+        Debug.Log("OnUpdate");
+		//ParseUpdateData(packet.RemoveEventName(true));
 	}
 
 	public void Quit(){
